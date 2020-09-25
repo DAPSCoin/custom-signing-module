@@ -3929,6 +3929,8 @@ bool CWallet::selectDecoysAndRealIndex(CTransaction& tx, int& myIndex, int ringS
                 if (p->IsProofOfStake()) {
                     coinbaseIdx = 1;
                 }
+                //dont select poa as decoy
+                if (b.posBlocksAudited.size() > 0) continue;
                 CTransaction& coinbase = b.vtx[coinbaseIdx];
 
                 for (size_t i = 0; i < coinbase.vout.size(); i++) {
