@@ -1286,7 +1286,7 @@ qt/qt_dapscoin_qt-dapscoin.o: qt/dapscoin.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h qt/walletmodel.h \
  qt/walletmodeltransaction.h allocators.h swifttx.h base58.h main.h \
- amount.h chain.h pow.h tinyformat.h util.h utiltime.h \
+ amount.h chain.h poa.h tinyformat.h util.h utiltime.h \
  /usr/include/boost/lexical_cast.hpp \
  /usr/include/boost/range/iterator_range_core.hpp \
  /usr/include/boost/range/functions.hpp /usr/include/boost/range/size.hpp \
@@ -5079,7 +5079,7 @@ amount.h:
 
 chain.h:
 
-pow.h:
+poa.h:
 
 tinyformat.h:
 
